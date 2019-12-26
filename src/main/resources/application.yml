@@ -11,7 +11,7 @@ spring:
     prefix: classpath:/templates/
   redis:
     #redis 服务器地址
-    hostName: 127.0.0.1
+    hostName: 101.133.162.75
     #redis端口
     port: 6379
     #redis 密码
@@ -74,7 +74,7 @@ logging:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+    url: jdbc:mysql://101.133.162.75:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
     username: root
     password: niit
     driver-class-name: com.mysql.jdbc.Driver
