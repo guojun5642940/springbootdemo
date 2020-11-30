@@ -1,6 +1,6 @@
 spring:
   application:
-    name: myspringboot
+    name: nacos-provider
   output:
     ansi:
       enabled: always
@@ -42,6 +42,10 @@ spring:
     testWhileIdle: false
     #数据库
     database: 0
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.133.162.75:8848
 
 server:
   tomcat:
@@ -51,6 +55,8 @@ server:
     max-threads: 300
     accept-count: 200
   port: 8080
+  servlet:
+    context-path: /SpringBoot
 
 mybatis:
   type-aliases-package: com.guoj.mapper
